@@ -1,0 +1,92 @@
+
+/* ProductList.css */
+
+/* Стили для десктопа и планшетов */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-left: 260px;
+    padding-right: -100px;
+}
+
+.product-card {
+    width: calc(29.33% - 4px);
+    box-sizing: border-box;
+    margin-bottom: 4px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(155, 135, 135, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.01);
+    box-shadow: 3px 4px 3px rgba(98, 91, 91, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+    margin: auto;
+}
+
+.product-details {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product-name h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    /*font-family: "Courier New";*/
+}
+
+.product-description {
+    margin-bottom: 8px;
+    text-align: center;
+
+    width: 100%; /* Добавим ширину 88% для описания */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #1a94e5;
+    text-align: center;
+}
+
+/* Медиа-запрос для планшетов и мобильных устройств с максимальной шириной 1024px */
+@media (max-width: 1024px) {
+    .product-list {
+        margin-left: 340px; /* Уменьшаем отступ слева */
+    }
+
+    .product-card {
+        width: calc(75% - 4px); /* Уменьшаем ширину карточки для планшетов */
+    }
+}
+
+/* Медиа-запрос для мобильных устройств с максимальной шириной 768px */
+@media (max-width: 768px) {
+    .product-list {
+        margin-left: 10px; /* Уменьшаем отступ слева */
+        margin-top: 150px; /* Изменяем отступ сверху */
+    }
+
+    .product-card {
+        width: 100%; /* Занимаем всю ширину на мобильных устройствах */
+    }
+}
