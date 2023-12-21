@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* client/src/App.css */
+.App {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+/* Добавим следующие стили в ваш общий стилевой файл, например, App.css или где-то подобном */
+
+body.modal-open {
+  overflow: hidden;
+}
+.password {
+  margin-top: 90px;
+  text-align: center;
+}
+.inpPass {
+  width: 200px;
+  margin: auto;
+}
+.btnPass {
+  background: #48c2e0;
+  padding: 5px;
+  color: #5f5d5a;
+  border: 2px solid gray;
+  border-radius: 4px;
+  font-size: 20px ;
+}
+
+@media (max-width: 768px) {
+  /*html body {*/
+  /*  text-align: center;*/
+  /*  overflow-x: hidden; !* Добавляем свойство для предотвращения горизонтального скроллинга *!*/
+  /*}*/
+  .password {
+    margin-top: 170px;
+    text-align: center;
+    overflow-x: hidden; /* Добавляем свойство для предотвращения горизонтального скроллинга */
+  }
+}
+@media (max-width: 140px) {
+  /*html body {*/
+  /*  text-align: center;*/
+  /*  overflow-x: hidden; !* Добавляем свойство для предотвращения горизонтального скроллинга *!*/
+  /*}*/
+  .password {
+    margin-top: 170px;
+    text-align: center;
+    overflow-x: hidden; /* Добавляем свойство для предотвращения горизонтального скроллинга */
+  }
+
+}
+@media (max-width: 390px) {
+  /*html body {*/
+  /*  text-align: center;*/
+  /*  overflow-x: hidden; !* Добавляем свойство для предотвращения горизонтального скроллинга *!*/
+  /*}*/
+  .password {
+    margin-top: 170px;
+    text-align: center;
+    overflow-x: hidden; /* Добавляем свойство для предотвращения горизонтального скроллинга */
+  }
+
+}
